@@ -46,8 +46,7 @@
 
 body {
   background: #333;
-  padding: 20px;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .content {

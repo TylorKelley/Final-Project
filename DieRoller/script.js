@@ -49,17 +49,27 @@ function showMenuCharacters() {
   document.getElementById("characters-dropdown").classList.add("show");
   document.getElementById("faelyn-map-dropdown").classList.remove("show");
   document.getElementById("monsters-dropdown").classList.remove("show");
+  document.getElementById("items-dropdown").classList.remove("show");
 }
 function showMenuFaelynMap() {
   document.getElementById("faelyn-map-dropdown").classList.add("show");
   document.getElementById("characters-dropdown").classList.remove("show");
   document.getElementById("monsters-dropdown").classList.remove("show");
+  document.getElementById("items-dropdown").classList.remove("show");
 }
 
 function showMenuMonsters() {
   document.getElementById("monsters-dropdown").classList.add("show");
   document.getElementById("faelyn-map-dropdown").classList.remove("show");
   document.getElementById("characters-dropdown").classList.remove("show");
+  document.getElementById("items-dropdown").classList.remove("show");
+}
+
+function showMenuItems() {
+  document.getElementById("items-dropdown").classList.add("show");
+  document.getElementById("characters-dropdown").classList.remove("show");
+  document.getElementById("faelyn-map-dropdown").classList.remove("show");
+  document.getElementById("monsters-dropdown").classList.remove("show");
 }
 
 function menuDisappearMap() {
@@ -71,6 +81,9 @@ function menuDisappearCharacters() {
 function menuDisappearMonsters() {
   document.getElementById("monsters-dropdown").classList.remove("show");
 }
+function menuDissapearItems() {
+  document.getElementById("items-dropdown").classList.remove("show");
+}
 
 document
   .getElementById("characters")
@@ -81,6 +94,9 @@ document
 document
   .getElementById("monsters")
   .addEventListener("mouseover", showMenuMonsters);
+document
+  .getElementById("magic-items")
+  .addEventListener("mouseover", showMenuItems);
 
 document
   .getElementById("characters-dropdown")
@@ -91,6 +107,9 @@ document
 document
   .getElementById("monsters-dropdown")
   .addEventListener("mouseleave", menuDisappearMonsters);
+document
+  .getElementById("items-dropdown")
+  .addEventListener("mouseleave", menuDissapearItems);
 
 // SIDE MENU
 
@@ -115,6 +134,8 @@ let sideMap = document.querySelector(".side-map");
 let subMenuMap = document.querySelector(".sub-list-map");
 let sideMonsters = document.querySelector(".side-monsters");
 let subMenuMonsters = document.querySelector(".sub-list-monsters");
+let sideItems = document.querySelector(".side-items");
+let subMenuItems = document.querySelector(".sub-list-items");
 
 sideCharacters.addEventListener("click", function () {
   subMenuCharacters.classList.toggle("show");
@@ -127,6 +148,11 @@ sideMap.addEventListener("click", function () {
 
 sideMonsters.addEventListener("click", function () {
   subMenuMonsters.classList.toggle("show");
+  event.preventDefault();
+});
+
+sideItems.addEventListener("click", function () {
+  subMenuItems.classList.toggle("show");
   event.preventDefault();
 });
 

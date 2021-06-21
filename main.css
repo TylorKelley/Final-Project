@@ -13,12 +13,17 @@ body {
   line-height: 1.4;
   position: relative;
   background-color: #303030;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 body.hidden {
   overflow: hidden;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
 
 /* html,
 body {

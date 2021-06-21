@@ -1,5 +1,12 @@
 body {
   background-color: #fff;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1023px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 .page-header-primary {
