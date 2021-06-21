@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.google.com/?category=Sans+Serif&selection.family=Lato">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="items.css">
+  <script src="../script.js" defer></script>
+  <title>Caverns of Faelyn</title>
+</head>
+<body>
+
+  <!--   Header -->
+
+  <header class="CoF-header" id="top-nav">
+    <section class="nav-left">
+      <div class="logo">
+        <a href="../index.html">
+        <img src="https://i.imgur.com/6dwuS8c.png" alt="Caves of Faelyn Logo" class="CoF-logo">
+      </a>
+      </div>
+      </div>
+    </section>
+    <section class="nav-right">
+      <div class="site-search">
+        <form action="/search" method="get" class="CoF-form" data-validation-disabled="true">
+          <div class="search-icon"></div>
+          <input name="q" class="CoF-form-field-query ui-autocomplete-input" autocomplete="off" placeholder="Delve Deeper..." role="textbox" aria-autocomplete="list" aria-haspopup="true">
+          <div class="hide autocomplete-target">
+            <ul class="ui autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul>
+        </form>
+        <div class="mobile-search-icon">
+          <img class="mobile-search-icon" href="#" src="https://i.imgur.com/sknSXAH.png">
+        </div>
+
+        <!-- Mobile Search Bar              -->
+        <div class="mobile-input-box">
+          <form class="mobile-form" method="get" action="search" id="form-mobile" data-validation-disabled="true">
+            <input name="q" class="mobile-form-field-query" autocomplete="on" placeholder="Delve Deeper...">
+        </div>
+        </input>
+        </form>
+      </div>
+      <!--       <script>-->
+      </div>
+      <div class="hamburger-menu" id="menu-trigger">
+        <!--         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon"> -->
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </section>
+  </header>
+  <header class="main-menu">
+    <section class="mm-nav-left">
+      <ul class="mm-nav">
+        <li id="characters">
+          <a class="menu-item dropdown" href="#">
+            <span class="nav-item"> Characters </span>
+          </a>
+        </li>
+        <li id="faelyn-map">
+          <a class="menu-item dropdown" href="#">
+            <span class="nav-item"> Faelyn Map </span>
+          </a>
+        </li>
+        <li id="monsters">
+          <a class="menu-item dropdown" href="#">
+            <span class="nav-item">Monsters</span>
+          </a>
+        </li>
+        <li id="magic-items">
+          <a class="menu-item dropdown" href="#">
+            <span class="nav-item"></span>Magic Items</span>
+          </a>
+        </li>
+        <li id="the-adventure">
+          <a class="menu-item" href="/the-adventure">
+            <span class="nav-item">The Adventure</span>
+          </a>
+        </li>
+        <li id="dice-roller">
+          <a href="../DieRoller/die.html" class="menu-item">
+            <span class="nav-item"> Dice Roller </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </header>
+  <!-- Main Menu Dropdown -->
+  <aside class="dropdown-menu" id="characters-dropdown">
+    <div class="dropdown-body">
+      <div class="grid-group">
+        <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+          <div class="grid-button">
+            <a class="grid-button-link" href="/Illithin" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:625px;background-image:url(https://i.imgur.com/JYZzXIp.png);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Illithin: Rogue</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="/Wyatt Jones" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:450px;background-image:url(https://i.imgur.com/fFxqADB.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Wyatt Jones: gunslinger</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="/Nyssa" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:900px;background-image:url(https://i.imgur.com/sL7jUop.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Nyssa Lockheart: Ranger</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="/Wabu" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:500px;background-image:url(https://i.imgur.com/9n4WuAv.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Wabu: Monk</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="/Gilmec" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:450px;background-image:url(https://i.imgur.com/EBH14SS.png);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Gilmec: blood hunter</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+  </aside>
+  <aside class="dropdown-menu" id="faelyn-map-dropdown">
+    <div class="dropdown-body">
+      <div class="grid-group">
+        <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+          <div class="grid-button">
+            <a href="../Map/map.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;background-image:url(https://i.imgur.com/XElmFWY.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Faelyn</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <aside class="dropdown-menu" id="monsters-dropdown">
+    <div class="dropdown-body">
+      <div class="grid-group">
+        <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+          <div class="grid-button">
+            <a href="../Characters/thug.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:600px;background-image:url(https://i.imgur.com/I2L3cf4.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Thug</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="../Characters/goblin.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:300px;background-image:url(https://i.imgur.com/glQQREV.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Goblin</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="../Characters/hobgoblin.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:600px;background-image:url(https://i.imgur.com/trR509F.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Hobgoblin</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="../Characters/hobgoblin.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:400px;background-image:url(https://i.imgur.com/qv7vkfa.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Bugbear</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <aside class="dropdown-menu" id="items-dropdown">
+    <div class="dropdown-body">
+      <div class="grid-group">
+        <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+          <div class="grid-button">
+            <a href="../Items/wos.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;background-image:url(https://i.imgur.com/dQ1cwye.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Wand of Smiles</div>
+              </div>
+            </a>
+          </div>
+          <div class="grid-button">
+            <a href="../Items/items.html" class="grid-button-link" target="_self">
+              <div class="grid-button-background" style="background-position: center center;height:400px;background-image:url(https://i.imgur.com/mYmLo1c.jpg);"></div>
+              <div class="grid-button-label">
+                <div class="grid-button-label-text">Alchemy Jug</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- Side menu -->
+  <aside class="side-nav-overlay">
+    <div class="side-menu-position" id="side-menu">
+      <ul class="side-menu-list side-menu-list-b">
+        <li id="characters" class="m-side-menu-item  m-side-menu-item-before side-characters">
+          <a href="#" class="nav-item-sm">
+            <span class="nav-item-sm"> Characters </span>
+          </a>
+          </li>
+          <ul class="sub-list sub-list-characters">
+            <li id="nav-illithin" class="b-list-item p-nav-item subnav-open">
+              <a href="/illithin">
+                <span class="b-list-label"> Illithin </span>
+              </a>
+            </li>
+            <li id="nav-Wyatt" class="b-list-item p-nav-item subnav-open">
+              <a href="/Wyatt">
+                <span class="b-list-label"> Wyatt Jones </span>
+              </a>
+            </li>
+            <li id="nav-Nyssa" class="b-list-item p-nav-item subnav-open">
+              <a href="/Nyssa">
+                <span class="b-list-label"> Nyssa Lockheart </span>
+              </a>
+            </li>
+            <li id="nav-Wabu" class="b-list-item p-nav-item subnav-open">
+              <a href="/Wabu">
+                <span class="b-list-label"> Wabu </span>
+              </a>
+            </li>
+            <li id="nav-Gilmec" class="b-list-item p-nav-item subnav-open">
+              <a href="/Gilmec">
+                <span class="b-list-label"> Gilmec </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li id="side-maps" class="m-side-menu-item m-side-menu-item-before side-map">
+          <a href="#">
+            <span class="nav-item-sm"> Maps </span>
+          </a>
+          </li>
+          <ul class="sub-list sub-list-map">
+            <li id="nav-faelyn" class="b-list-item p-nav-item subnav-open">
+              <a href="../Map/map.html">
+                <span class="b-list-label"> Faelyn </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li id="monsters" class="m-side-menu-item  m-side-menu-item-before side-monsters">
+          <a href="#" class="nav-item-sm">
+            <span class="nav-item-sm"> Monsters </span>
+          </a>
+          </li>
+          <ul class="sub-list sub-list-monsters">
+            <li id="nav-thug" class="b-list-item p-nav-item subnav-open">
+              <a href="../Characters/thug.html">
+                <span class="b-list-label"> Thug </span>
+              </a>
+            </li>
+            <li id="nav-goblin" class="b-list-item p-nav-item subnav-open">
+              <a href="../Characters/goblin.html">
+                <span class="b-list-label"> Goblin </span>
+              </a>
+            </li>
+            <li id="nav-hobgoblin" class="b-list-item p-nav-item subnav-open">
+              <a href="../Characters/hobgoblin.html">
+                <span class="b-list-label"> Hobgoblin </span>
+              </a>
+            </li>
+            <li id="nav-bugbear" class="b-list-item p-nav-item subnav-open">
+              <a href="../Characters/bugbear.html">
+                <span class="b-list-label"> Bugbear </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        </li>
+        <li id="magic-items" class="m-side-menu-item m-side-menu-item-before side-items">
+          <a class="nav-item-sm" href="#">
+            <span class="nav-item-sm"> Magic Items </span>
+          </a>
+        </li>
+        <ul class="sub-list sub-list-items">
+          <li id="nav-wand-of-smiles" class="b-list-item p-nav-item subnav-open">
+            <a href="../Items/wos.html">
+              <span class="b-list-label"> Wand of Smiles </span>
+            </a>
+          </li>
+          <li id="nav-bugbear" class="b-list-item p-nav-item subnav-open">
+            <a href="../Items/items.html">
+              <span class="b-list-label"> Alchemy Jug </span>
+            </a>
+          </li>
+        </ul>
+        </li>
+        </li>
+        <li id="the-adventure" class="m-side-menu-item">
+          <a class="nav-item-sm" href="/the-adventure">
+            <span class="nav-item-sm"> The Adventure </span>
+          </a>
+        </li>
+        <li id="dice-roller" class="m-side-menu-item">
+          <a class="nav-item-sm" href="../DieRoller/die.html">
+            <span class="nav-item-sm"> Dice Roller </span>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </aside>
+      <div class="page-header-primary">
+        <div class="page-heading">
+          <div class="page-heading-prefix">
+            <div class="page-heading-content">
+              <h1 class="page-title">Alchemy Jug </h1>
+            </div>
+            <div class="page-heading-suffix"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main content-container">
+          <section class="primary-content">
+            <div class="item-details alchemy-jug-details">
+              <div class="more-info details-more-info">
+                <div class="detail-content">
+                  <div class="image">
+                    <img src="https://i.imgur.com/mYmLo1c.jpg" alt="" class="magic-item-image">
+                  </div>
+                  <div class="item-info">
+                    <div class="details">
+                      <span>Wondrous Item, uncommon</span>
+                    </div>
+                    <div class="line maagic-item height2 marginTop15 marginBottom20"></div>
+                  </div>
+                  <div class="more-info-content">
+                    <p>This ceramic jug appears to be able to hold a gallon of liquid and weighs 12 pounds whether full or empty. Sloshing sounds can be heard from within the jug when it is shaken, even if the jug is empty.</p>
+                    <p>You can use an action and name one liquid from the table below to cause the jug to produce the chosen liquid. Afterward, you can uncork the jug as an action and pour that liquid out, up to 2 gallons per minute. The maximum amount of liquid the jug can produce depends on the liquid you named.</p>
+                    <p>Once the jug starts producing a liquid, it can't produce a different one, or more of one that has reached its maximum, until the next dawn.</p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Liquid</th>
+                          <th>Max Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Acid</td>
+                          <td>8 ounces</td>
+                        </tr>
+                        <tr>
+                          <td>beer</td>
+                          <td>4 gallons</td>
+                        </tr>
+                        <tr>
+                          <td>Honey</td>
+                          <td>1 gallon</td>
+                        </tr>
+                        <tr>
+                          <td>Mayonnaise</td>
+                          <td>2 gallons</td>
+                        </tr>
+                        <tr>
+                          <td>Oil</td>
+                          <td>quart</td>
+                        </tr>
+                        <tr>
+                          <td>Vinegar</td>
+                          <td>2 gallons</td>
+                        </tr>
+                        <tr>
+                          <td>Water, fresh</td>
+                          <td>8 gallons</td>
+                        </tr>
+                        <tr>
+                          <td>Water, salt</td>
+                          <td>12 gallons</td>
+                        </tr>
+                        <tr>
+                          <td>Wine</td>
+                          <td>1 gallon</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="notes-string">Notes: Utility</p>
+                  </div>
+                  <footer>
+    
+                  </footer>
+                </div>
+                <aside class="details-aside">
+                  <div class="image">
+                    <img class="magic-item-image" src="https://i.imgur.com/mYmLo1c.jpg">
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="footer-push"></div>
+  <footer id="footer">
+    <div class="CoF-footer">
+      <div class="CoF-footer-wrap CoF-upper-wrap">
+        <div class="CoF-footer-upper">
+          <div class="footer-strip-container">
+            <a href="https://www.dndbeyond.com/" class="strip-link">
+              <div class="strip-item strip-item-DnDBeyond">
+                <div class="strip-item-label strip-label">DnD Beyond</div>
+              </div>
+            </a>
+            <a href="http://www.easydamus.com/character.html" class="strip-link">
+              <div class="strip-item strip-item-take-quiz">
+                <div class="strip-item-label strip-label">Take A Quiz to Find your DnD Class!</div>
+              </div>
+            </a>
+            <a href="https://company.wizards.com/en" class="strip-link">
+              <div class="strip-item strip-item-wotc">
+                <div class="strip-item-label strip-label">Wizards of the Coast</div>
+              </div>
+            </a>
+          </div>
+
+     </div>
+      <div class="CoF-footer-wrap CoF-lower-wrap">
+      <div class="CoF-lower-wrap">
+        <div class="CoF-footer-copyright">
+        <div class="CoF-footer-copyright-wotc">
+          Dungeons & Dragons, D&D, their respective logos, and all Wizards titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2021 Wizards
+        </div>
+      </div>
+        </div>
+
+    </div>
+  </footer>
+  </body>
+ </html>

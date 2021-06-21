@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.google.com/?category=Sans+Serif&selection.family=Lato">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="character.css">
+  <script src="../script.js" defer></script>
+  <title>Thug Stat Block</title>
+</head>
+
+<body>
+    <header class="CoF-header" id="top-nav">
+        <section class="nav-left">
+          <div class="logo">
+            <a href="../index.html">
+            <img src="https://i.imgur.com/6dwuS8c.png" alt="Caves of Faelyn Logo" class="CoF-logo">
+          </a>
+          </div>
+          </div>
+        </section>
+        <section class="nav-right">
+          <div class="site-search">
+            <form action="/search" method="get" class="CoF-form" data-validation-disabled="true">
+              <div class="search-icon"></div>
+              <input name="q" class="CoF-form-field-query ui-autocomplete-input" autocomplete="off" placeholder="Delve Deeper..." role="textbox" aria-autocomplete="list" aria-haspopup="true">
+              <div class="hide autocomplete-target">
+                <ul class="ui autocomplete ui-menu ui-widget ui-widget-content ui-corner-all" role="listbox" aria-activedescendant="ui-active-menuitem" style="z-index: 1; top: 0px; left: 0px; display: none;"></ul>
+            </form>
+            <div class="mobile-search-icon">
+              <img class="mobile-search-icon" href="#" src="https://i.imgur.com/sknSXAH.png">
+            </div>
+    
+            <!-- Mobile Search Bar              -->
+            <div class="mobile-input-box">
+              <form class="mobile-form" method="get" action="search" id="form-mobile" data-validation-disabled="true">
+                <input name="q" class="mobile-form-field-query" autocomplete="on" placeholder="Delve Deeper...">
+            </div>
+            </input>
+            </form>
+          </div>
+          <!--       <script>-->
+          </div>
+          <div class="hamburger-menu" id="menu-trigger">
+            <!--         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon"> -->
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </section>
+      </header>
+      <header class="main-menu">
+        <section class="mm-nav-left">
+          <ul class="mm-nav">
+            <li id="characters">
+              <a class="menu-item dropdown" href="#">
+                <span class="nav-item"> Characters </span>
+              </a>
+            </li>
+            <li id="faelyn-map">
+              <a class="menu-item dropdown" href="#">
+                <span class="nav-item"> Faelyn Map </span>
+              </a>
+            </li>
+            <li id="monsters">
+              <a class="menu-item dropdown" href="#">
+                <span class="nav-item">Monsters</span>
+              </a>
+            </li>
+            <li id="magic-items">
+              <a class="menu-item" href="#">
+                <span class="nav-item"></span>Magic Items</span>
+              </a>
+            </li>
+            <li id="the-adventure">
+              <a class="menu-item" href="/the-adventure">
+                <span class="nav-item">The Adventure</span>
+              </a>
+            </li>
+            <li id="dice-roller">
+              <a href="../DieRoller/die.html" class="menu-item">
+                <span class="nav-item"> Dice Roller </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <!-- Main Menu Dropdown -->
+      <aside class="dropdown-menu" id="characters-dropdown">
+        <div class="dropdown-body">
+          <div class="grid-group">
+            <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+              <div class="grid-button">
+                <a class="grid-button-link" href="/Illithin" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:625px;background-image:url(https://i.imgur.com/JYZzXIp.png);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Illithin: Rogue</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="/Wyatt Jones" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:450px;background-image:url(https://i.imgur.com/fFxqADB.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Wyatt Jones: gunslinger</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="/Nyssa" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:900px;background-image:url(https://i.imgur.com/sL7jUop.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Nyssa Lockheart: Ranger</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="/Wabu" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:500px;background-image:url(https://i.imgur.com/9n4WuAv.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Wabu: Monk</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="/Gilmec" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:450px;background-image:url(https://i.imgur.com/EBH14SS.png);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Gilmec: blood hunter</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </aside>
+      <aside class="dropdown-menu" id="faelyn-map-dropdown">
+        <div class="dropdown-body">
+          <div class="grid-group">
+            <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+              <div class="grid-button">
+                <a href="../Map/map.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;background-image:url(https://i.imgur.com/XElmFWY.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Faelyn</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="dropdown-menu" id="monsters-dropdown">
+        <div class="dropdown-body">
+          <div class="grid-group">
+            <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+              <div class="grid-button">
+                <a href="thug.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:600px;background-image:url(https://i.imgur.com/I2L3cf4.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Thug</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="goblin.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:300px;background-image:url(https://i.imgur.com/glQQREV.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Goblin</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="hobgoblin.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:600px;background-image:url(https://i.imgur.com/trR509F.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Hobgoblin</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="bugbear.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:400px;background-image:url(https://i.imgur.com/qv7vkfa.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Bugbear</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <aside class="dropdown-menu" id="items-dropdown">
+        <div class="dropdown-body">
+          <div class="grid-group">
+            <div class="grid-group" style="grid-column-end: span 24;grid-row-end: span 24;">
+              <div class="grid-button">
+                <a href="../Items/wos.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;background-image:url(https://i.imgur.com/dQ1cwye.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Wand of Smiles</div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-button">
+                <a href="../Items/items.html" class="grid-button-link" target="_self">
+                  <div class="grid-button-background" style="background-position: center center;height:400px;background-image:url(https://i.imgur.com/mYmLo1c.jpg);"></div>
+                  <div class="grid-button-label">
+                    <div class="grid-button-label-text">Alchemy Jug</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- Side menu -->
+      <aside class="side-nav-overlay">
+        <div class="side-menu-position" id="side-menu">
+          <ul class="side-menu-list side-menu-list-b">
+            <li id="characters" class="m-side-menu-item  m-side-menu-item-before side-characters">
+              <a href="#" class="nav-item-sm">
+                <span class="nav-item-sm"> Characters </span>
+              </a>
+              </li>
+              <ul class="sub-list sub-list-characters">
+                <li id="nav-illithin" class="b-list-item p-nav-item subnav-open">
+                  <a href="/illithin">
+                    <span class="b-list-label"> Illithin </span>
+                  </a>
+                </li>
+                <li id="nav-Wyatt" class="b-list-item p-nav-item subnav-open">
+                  <a href="/Wyatt">
+                    <span class="b-list-label"> Wyatt Jones </span>
+                  </a>
+                </li>
+                <li id="nav-Nyssa" class="b-list-item p-nav-item subnav-open">
+                  <a href="/Nyssa">
+                    <span class="b-list-label"> Nyssa Lockheart </span>
+                  </a>
+                </li>
+                <li id="nav-Wabu" class="b-list-item p-nav-item subnav-open">
+                  <a href="/Wabu">
+                    <span class="b-list-label"> Wabu </span>
+                  </a>
+                </li>
+                <li id="nav-Gilmec" class="b-list-item p-nav-item subnav-open">
+                  <a href="/Gilmec">
+                    <span class="b-list-label"> Gilmec </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="side-maps" class="m-side-menu-item m-side-menu-item-before side-map">
+              <a href="#">
+                <span class="nav-item-sm"> Maps </span>
+              </a>
+              </li>
+              <ul class="sub-list sub-list-map">
+                <li id="nav-faelyn" class="b-list-item p-nav-item subnav-open">
+                  <a href="../Map/map.html">
+                    <span class="b-list-label"> Faelyn </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li id="monsters" class="m-side-menu-item  m-side-menu-item-before side-monsters">
+              <a href="#" class="nav-item-sm">
+                <span class="nav-item-sm"> Monsters </span>
+              </a>
+              </li>
+              <ul class="sub-list sub-list-monsters">
+                <li id="nav-thug" class="b-list-item p-nav-item subnav-open">
+                  <a href="thug.html">
+                    <span class="b-list-label"> Thug </span>
+                  </a>
+                </li>
+                <li id="nav-goblin" class="b-list-item p-nav-item subnav-open">
+                  <a href="goblin.html">
+                    <span class="b-list-label"> Goblin </span>
+                  </a>
+                </li>
+                <li id="nav-hobgoblin" class="b-list-item p-nav-item subnav-open">
+                  <a href="hobgoblin.html">
+                    <span class="b-list-label"> Hobgoblin </span>
+                  </a>
+                </li>
+                <li id="nav-bugbear" class="b-list-item p-nav-item subnav-open">
+                  <a href="bugbear.html">
+                    <span class="b-list-label"> Bugbear </span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            </li>
+            <li id="magic-items" class="m-side-menu-item m-side-menu-item-before side-items">
+              <a class="nav-item-sm" href="#">
+                <span class="nav-item-sm"> Magic Items </span>
+              </a>
+            </li>
+            <ul class="sub-list sub-list-items">
+              <li id="nav-wand-of-smiles" class="b-list-item p-nav-item subnav-open">
+                <a href="../Items/wos.html">
+                  <span class="b-list-label"> Wand of Smiles </span>
+                </a>
+              </li>
+              <li id="nav-bugbear" class="b-list-item p-nav-item subnav-open">
+                <a href="../Items/items.html">
+                  <span class="b-list-label"> Alchemy Jug </span>
+                </a>
+              </li>
+            </ul>
+            </li>
+            </li>
+            <li id="the-adventure" class="m-side-menu-item">
+              <a class="nav-item-sm" href="/the-adventure">
+                <span class="nav-item-sm"> The Adventure </span>
+              </a>
+            </li>
+            <li id="dice-roller" class="m-side-menu-item">
+              <a class="nav-item-sm" href="../DieRoller/die.html">
+                <span class="nav-item-sm"> Dice Roller </span>
+              </a>
+            </li>
+    
+          </ul>
+    
+        </div>
+      </aside>
+  <div class="container">
+    <div id="content" class="main content-container">
+      <section class="primary-content">
+        <div class="monster-details">
+          <div class="more-info details-more-info">
+            <div class="detail-content">
+              <div class="image">
+                <img src="https://i.imgur.com/DzrW3dm.jpg" class="monster-image">
+                </a>
+              </div>
+              <div class="mon-stat-block">
+                <div class="mon-stat-block-name">
+                  <a href="" class="mon-stat-block-name-link" href="#"> Thug </a>
+                </div>
+                <div class="mon-stat-block-meta">Medium humanoid (any race) , any non-good alignment </div>
+                <div class="mon-stat-block-seperator">
+                  <img src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg" class="mon-stat-block-seperator-image">
+                </div>
+                <div class="mon-stat-block-attributes">
+                  <div class="mon-stat-block-attribute">
+                    <span class="mon-stat-block-attribute-label">Armor Class</span>
+                    <span class="mon-stat-block-attribute-data-value">11</span>
+                    <span class="mon-stat-block-attribute-data-extra">(Leather Armor)</span>
+                  </div>
+                  <div class="mon-stat-block-attribute">
+                    <span class="mon-stat-block-attribute-label">Hit Points</span>
+                    <span class="mon-stat-block-attribute-data">
+                      <span class="mon-stat-block-attribute-data-value">32</span>
+                      <span class="mon-stat-block-attribute-data-extra">(5d8 + 10)</span>
+                    </span>
+
+                  </div>
+                  <div class="mon-stat-block-attribute">
+                    <span class="mon-stat-block-attribute-label">Speed</span>
+                    <span class="mon-stat-block-attribute-data">
+                      <span class="mon-stat-block-attribute-data-value"> 30 ft. </span>
+
+                    </span>
+
+                  </div>
+
+                </div>
+                <div class="mon-stat-block-stat.block">
+                  <div class="stat-block-seperator">
+                    <img src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg" class="mon-stat-block-seperator-img">
+                  </div>
+                  <div class="ability-block">
+                    <div class="ability-block-stat ability-block-stat--str">
+                      <div class="ability-block-heading">STR</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">15</span>
+                        <span class="abilility-block-modifier">(+2)</span>
+                      </div>
+                    </div>
+                    <div class="ability-block-stat ability-block-stat--dex">
+                      <div class="ability-block-heading">DEX</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">11</span>
+                        <span class="ability-block-modifier">(+0)</span>
+
+                      </div>
+
+                    </div>
+                    <div class="ability-block-stat ability-block-stat--con">
+                      <div class="ability-block-heading">CON</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">14</span>
+                        <span class="ability-block-modifier">(+2)</span>
+
+                      </div>
+                    </div>
+                    <div class="ability-block-stat ability-block-stat--int">
+                      <div class="ability-block-heading">INT</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">10</span>
+                        <span class="ability-block-modifier">(+0)</span>
+
+                      </div>
+
+                    </div>
+
+                    <div class="ability-block-stat ability-block-stat--wis">
+                      <div class="ability-block-heading">WIS</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">10</span>
+                        <span class="ability-block-modifier">(+0)</span>
+
+                      </div>
+
+                    </div>
+
+                    <div class="ability-block-stat ability-block-stat--cha">
+                      <div class="ability-block-heading">CHA</div>
+                      <div class="ability-block-data">
+                        <span class="ability-block-score">11</span>
+                        <span class="ability-block-modifier">(+0)</span>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="stat-block-seperator">
+                    <img src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg" class="mon-stat-block-seperator-img">
+                  </div>
+                </div>
+                <div class="mon-stat-block-tidbits">
+                  <div class="mon-stat-block-tidbit">
+                    <span class="mon-stat-block-tidbit-label">Skills</span>
+                    <span class="mon-stat-block-tidbit-data">Intimidation +2</span>
+                  </div>
+                  <div class="mon-stat-block-tidbit">
+                    <span class="mon-stat-block-tidbit-label">Senses</span>
+                    <span class="mon-stat-block-tidbit-data">Passive Perception 10</span>
+                  </div>
+                  <div class="mon-stat-block-tidbit">
+                    <span class="mon-stat-block-tidbit-label">Languages</span>
+                    <span class="mon-stat-block-tidbit-data">Any one language (usually Common)</span>
+                  </div>
+                  <div class="mon-stat-block-tidbit-container">
+                    <div class="mon-stat-block-tidbit">
+                      <span class="mon-stat-block-tidbit-label">Challenge</span>
+                      <span class="mon-stat-block-tidbit-data"> 1/2 (100xp) </span>
+                    </div>
+                    <div class="mon-stat-block-tidbit-spacer"></div>
+                    <div class="mon-stat-block-tidbit">
+                      <span class="mon-stat-block-tidbit-label">Proficiency</span>
+                      <span class="mon-stat-block-tidbit-data"> +2 </span>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="stat-block-seperator">
+                  <img src="https://media-waterdeep.cursecdn.com/file-attachments/0/579/stat-block-header-bar.svg" class="mon-stat-block-seperator-img">
+                </div>
+                <div class="mon-stat-block-description-blocks">
+                  <div class="mon-stat-block-description-block">
+                    <div class="mon-stat-block-description-block-content">
+                      <p>
+                        <em>
+                          <strong>Pack Tactics.</strong>
+                        </em>
+                        The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't incapacitated.
+                      </p>
+
+                    </div>
+                  </div>
+                  <div class="mon-stat-block-description-block">
+                    <div class="mon-stat-block-description-block-heading">Actions</div>
+                    <div class="mon-stat-block-description-block-content">
+                      <p>
+                        <em>
+                          <strong>Multiattack</strong>
+                        </em>
+                        The thug makes two melee attacks.
+                      </p>
+                      <p>
+                        <em>
+                          <strong>Mace.</strong>
+                          Melee Weapon Attack:
+                        </em>
+                        <span>+4</span>
+                        to hit, reach 5 ft., one target.
+                        <em>Hit:</em>
+                        5
+                        <span> (1d6 + 2) </span>
+                        bludgeoning damage.
+                      </p>
+                      <p>
+                        <em>
+                          <strong>Heavy Crossbow.</strong>
+                          Ranged Weapon Attack:
+                        </em>
+                        <span>+2</span>
+                        to hit, range 100/400 ft., one target.
+                        <em>Hit:</em>
+                        5
+                        <span> (1d10) </span>
+                        piercing damage.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="more-info-content">
+                <div class="mon-details-description-block">
+                  <h3 class="mon-details-description-block-heading">Description</h3>
+                  <div class="mon-details-description-block-content">
+                    <p>Thugs are ruthless enforcers skilled at intimidation and violence. They work for money and have few scruples.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <aside class="details-aside">
+              <div class="image">
+                <img src="https://i.imgur.com/DzrW3dm.jpg" class="monster-image">
+              </div>
+            </aside>
+          </div>
+
+        </div>
+
+    </div>
+
+    </section>
+
+  </div>
+
+  </div>
+  <div class="footer-push"></div>
+  <footer id="footer">
+    <div class="CoF-footer">
+      <div class="CoF-footer-wrap CoF-upper-wrap">
+        <div class="CoF-footer-upper">
+          <div class="footer-strip-container">
+            <a href="https://www.dndbeyond.com/" class="strip-link">
+              <div class="strip-item strip-item-DnDBeyond">
+                <div class="strip-item-label strip-label">DnD Beyond</div>
+              </div>
+            </a>
+            <a href="http://www.easydamus.com/character.html" class="strip-link">
+              <div class="strip-item strip-item-take-quiz">
+                <div class="strip-item-label strip-label">Take A Quiz to Find your DnD Class!</div>
+              </div>
+            </a>
+            <a href="https://company.wizards.com/en" class="strip-link">
+              <div class="strip-item strip-item-wotc">
+                <div class="strip-item-label strip-label">Wizards of the Coast</div>
+              </div>
+            </a>
+          </div>
+
+     </div>
+      <div class="CoF-footer-wrap CoF-lower-wrap">
+      <div class="CoF-lower-wrap">
+        <div class="CoF-footer-copyright">
+        <div class="CoF-footer-copyright-wotc">
+          Dungeons & Dragons, D&D, their respective logos, and all Wizards titles and characters are property of Wizards of the Coast LLC in the U.S.A. and other countries. ©2021 Wizards
+        </div>
+      </div>
+        </div>
+
+    </div>
+  </footer>
+</body>
+
+</html>
